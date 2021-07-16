@@ -1,0 +1,59 @@
+//15. WAP to create a map using Custom class as key and any other JDK provided object as value
+
+package HashMapAssignments;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+class Supply {
+	int id;
+	String name;
+
+	Supply() {
+	}
+
+	Supply(int id, String nm) {
+		this.id = id;
+		name = nm;
+	}
+
+	public String toString() {
+		return "Supply id " + id + " Supply name " + name;
+	}
+}
+
+public class Assign_15 {
+	Map<Supply, String> map;
+
+	public void creatMap() {
+		Supply s1= new Supply(2321,"BK Publ.");
+		Supply s2=new Supply(453,"MRF");
+		Supply s3=new Supply(676,"ThumpsUp");
+		
+		map=new HashMap<>();
+		map.put(s1,"NoteBook");
+		map.put(s2, "Tyers");
+		map.put(s3, "ColdDrinks");
+	//	map.put(s2, "Tubes");
+		//System.out.println(map);
+	}
+	public void displayIterate() {
+		Set<Supply>st= map.keySet();
+		Iterator<Supply>itr=st.iterator();
+		while(itr.hasNext()) {
+			Supply rs=itr.next();
+			String nm=map.get(rs);
+			System.out.println("Supplier id   "+rs.id);
+			System.out.println("Supplier name "+rs.name);
+			System.out.println("Supplier Type "+nm);
+			System.out.println();
+		}
+	}
+	public static void main(String... a) {
+		Assign_15 as= new Assign_15();
+		as.creatMap();
+		as.displayIterate();
+	}
+}

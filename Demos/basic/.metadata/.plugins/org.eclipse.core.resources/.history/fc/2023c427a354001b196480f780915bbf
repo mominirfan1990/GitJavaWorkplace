@@ -1,0 +1,21 @@
+//7. WAP to copy a HashMap content to another LinkedHashMap.
+package LinkedHashMapAssignment;
+
+import java.util.LinkedHashMap;
+
+public class Assign_07 {
+
+	public static void main(String[] args) {
+		LinkedHashMap<Integer, String>lmap=new LinkedHashMap<>();
+		lmap.put(10, "Irfan");
+		lmap.put(20, "Ganesh");
+		lmap.put(9, "Omkar");
+		lmap.put(1, "Vishal");
+		lmap.put(40, "Rajesh");
+		
+		LinkedHashMap<Integer, String>lmap1=new LinkedHashMap<>();
+		lmap1.putAll(lmap);
+		System.out.println(lmap1);
+	}
+
+}

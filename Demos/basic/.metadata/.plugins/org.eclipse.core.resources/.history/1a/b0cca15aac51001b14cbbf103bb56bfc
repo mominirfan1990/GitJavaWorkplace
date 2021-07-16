@@ -1,0 +1,31 @@
+package ExtraMapAssignments;
+
+class Student1
+{
+	int sid;
+	String sname,city;
+	float aggregateMarks;
+	Student1(){}
+	Student1(int id, String nam, String city, float mark)
+	{
+		sid=id;
+		sname=nam;
+		this.city=city;
+		aggregateMarks=mark;
+	}
+	@Override
+	public String toString() 
+	{
+		return "Student id=" + sid + ", name=" + sname + ", city=" + city + ", aggregateMarks=" + aggregateMarks;
+	}
+	
+}
+public class Assign_03 {
+
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

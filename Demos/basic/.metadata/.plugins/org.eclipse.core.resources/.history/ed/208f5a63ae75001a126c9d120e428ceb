@@ -1,0 +1,25 @@
+package StringExample;
+
+import java.util.Scanner;
+
+class StringNum
+{
+	public void findNum(String s)
+	{
+		
+	}
+}
+
+public class Exract_Num_From_String {
+
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Eneter String");
+		String str =  sc.nextLine();
+		
+		StringNum sn = new StringNum();
+		
+	}
+
+}

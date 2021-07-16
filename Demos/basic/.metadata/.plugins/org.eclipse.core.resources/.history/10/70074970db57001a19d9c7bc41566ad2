@@ -1,0 +1,12 @@
+package com.overloading;
+
+public class ticketBookingApp
+{
+	public static void main(String[] args)
+	{
+		TicketBooking b= new TicketBooking();
+		movie m= new movie();
+		air a = new air();
+		train t = new train();
+	}
+}

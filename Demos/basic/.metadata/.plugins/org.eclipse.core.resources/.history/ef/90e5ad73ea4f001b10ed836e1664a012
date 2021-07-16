@@ -1,0 +1,33 @@
+//19. WAP to create a Map which stores another Map as a value.
+
+package HashMapAssignments;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Assign_19
+{
+	Map<Integer, String> map;
+
+	public void creatMAp() 
+	{
+		map = new HashMap<>();
+		map.put(23, "Honda");
+		map.put(62, "Hero");
+		map.put(3, "TVS");
+		map.put(814, "Honda");
+		
+		Map<Integer, Map> map1;
+		map1=new HashMap<>();
+		map1.put(23, map);
+		
+		System.out.println(map1);
+		
+	}
+	public static void main(String[] args)
+	{
+		Assign_19 as= new Assign_19();
+		as.creatMAp();
+	}
+
+}

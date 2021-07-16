@@ -1,0 +1,28 @@
+package StringAssignment;
+
+import java.util.Scanner;
+
+public class ReverseOfWordInString 
+{
+	public static void main(String arge[])
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Eneter String ");
+		String s= sc.nextLine();
+	
+		char ch[]=s.toCharArray();
+	
+		for(int i=ch.length-1; i>=0;i--)
+		{
+			if((char)ch[i]==32)
+			{
+				for(int j=i; j<=ch.length-1; j++)
+				{
+					System.out.print(ch[j]);
+				}
+				
+			}
+		
+		}
+	}
+}

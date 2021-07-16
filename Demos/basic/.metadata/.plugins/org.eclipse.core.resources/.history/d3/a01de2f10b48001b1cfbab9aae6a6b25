@@ -1,0 +1,8 @@
+
+public class ItemStockUnderFlowException extends Exception
+{
+	ItemStockUnderFlowException()
+	{
+		System.out.println("Item are less than minimum capacity");
+	}
+}

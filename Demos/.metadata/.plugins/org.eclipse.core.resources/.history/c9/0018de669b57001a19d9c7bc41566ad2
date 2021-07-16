@@ -1,0 +1,44 @@
+package com.overloading;
+
+class FDAccount
+{
+	
+}
+
+class LoanAccount
+{
+
+}
+
+class SavingAccount
+{
+	
+}
+
+
+public class BankApp 
+{
+
+	public void openAccount(FDAccount a)
+	{
+		System.out.println("FD Account Details Are = "  );
+	}
+	public void openAccount(LoanAccount a)
+	{
+		System.out.println("Loan Account Details Are = "  );
+	}
+	public void openAccount(SavingAccount a)
+	{
+		System.out.println("Saving Account Details Are = "  );
+	}
+	
+}
+
+
+
+
+
+
+
+
+

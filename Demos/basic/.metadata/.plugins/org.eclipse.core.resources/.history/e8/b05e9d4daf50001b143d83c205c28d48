@@ -1,0 +1,50 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class MovieApp
+{
+	Map<Integer, String> map1,map2,map3;
+	Map<String,Map>map;
+	public void creatMovieList()
+	{
+		map1=new HashMap<>();
+		map1.put(1, "URI");
+		map1.put(2, "DDLJ ");
+		map1.put(3, "TANAJHI");
+		
+		map2=new HashMap<>();
+		map2.put(1, "THAPPAD");
+		map2.put(2, "URI");
+		map2.put(3, "PANGA");
+		
+		map3=new HashMap<>();
+		map3.put(1, "DANGAL");
+		map3.put(2, "DABBANG");
+		map3.put(3, "3IDIOTS");
+		
+		map=new HashMap<>();
+		map.put("INOX", map1);
+		map.put("PVR", map2);
+		map.put("CityPride", map3);
+		
+		System.out.println(map);
+	}
+	public void display()
+	{
+		Set<Entry<String,Map>>st=map.entrySet();
+		Iterator<Entry<String,Map>>itr= st.iterator();
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next());
+		}
+	}
+	public static void main(String[] args) 
+	{
+		MovieApp ma = new MovieApp();
+		ma.creatMovieList();
+	}
+
+}

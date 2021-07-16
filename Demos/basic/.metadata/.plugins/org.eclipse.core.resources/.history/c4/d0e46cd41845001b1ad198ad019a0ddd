@@ -1,0 +1,34 @@
+import java.io.IOException;
+import java.nio.file.*;
+import java.util.Scanner;
+
+class MyClass 
+{
+	public void myMethod1()
+	{
+		this.myMethod2();
+		
+	}
+	public void myMethod2()
+	{
+		this.myMethod3();
+		
+	}
+	public void myMethod3()
+	{
+		Files file= new Files("irfan.txt");
+		 throw IOException();
+		//Scanner sc = new Scanner(file); 	
+	}
+}
+
+public class Assign_28 {
+
+	public static void main(String[] args) throws IOException
+	{
+		MyClass ms = new MyClass();
+		ms.myMethod3();
+	
+	}
+
+}

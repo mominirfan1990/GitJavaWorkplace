@@ -1,0 +1,34 @@
+class OuputNotBeZeroException extends Throwable
+{
+	String s;
+	OuputNotBeZeroException(String str)
+	{
+		System.out.println("in OuputNotBeZeroException class");
+		s=str;
+	}
+	public void showErr()
+	{
+		System.out.println(s);
+	}
+	
+}
+public class Assign_15
+{
+	public int ReturnData(int i,int j) throws OuputNotBeZeroException
+	{
+		int sum=0;
+		sum=i-j
+		if(sum<0)
+		{
+			throw new OuputNotBeZeroException(" Output not be zero");
+		}
+		return div;
+	}
+	public static void main(String [] args) throws OuputNotBeZeroException 
+	{
+		Assign_15 ss = new Assign_15();
+		System.out.println(ss.ReturnData(4, 0));
+		
+	}
+
+}

@@ -1,0 +1,74 @@
+package ExtraMapAssignments;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+class Student1
+{
+	int sid;
+	String sname,city;
+	float aggregateMarks;
+	Student1(){}
+	Student1(int id, String nam, String city, float mark)
+	{
+		sid=id;
+		sname=nam;
+		this.city=city;
+		aggregateMarks=mark;
+	}
+	@Override
+	public String toString() 
+	{
+		return "\n Student id=" + sid + ", name=" + sname + ", city=" + city + ", aggregateMarks=" + aggregateMarks;
+	}
+	
+}
+public class Assign_03 
+{
+	ArrayList<Student1>list,list2;
+	Map<Float,Student1>map;
+	public void creatList()
+	{
+		Student1 st= new Student1(11,"Omkar","Pune",60.56f);
+		Student1 st1=new Student1(12,"Vishal","Nashik",60.56f);
+		Student1 st2=new Student1(13,"Ganesh","Mumbai",60.56f);
+		
+		Student1 st3=new Student1(14,"Irfan","Satara",76.5f);
+		Student1 st4=new Student1(4, "Rajasi","Pune",76.5f);
+		Student1 st5=new Student1(10,"Mayur","Sangali",76.5f);
+		
+		list=new ArrayList<>();
+		list.add(st);
+		list.add(st1);
+		list.add(st2);
+		list.add(st3);
+		list.add(st4);
+		list.add(st5);
+		
+		map= new HashMap<>();
+		for(int i=0; i<list.size();i++)
+		{
+			for(int j=0; j<list.size();j++)
+			{
+				if(list.get(i).aggregateMarks==list.get(j).aggregateMarks)
+				{
+					map.put(list.get(j).aggregateMarks, list.get(j));
+				}
+				else
+					map.put(list.get(j).aggregateMarks, list.get(j));
+			}
+		}
+	
+		
+		
+		System.out.println(map);
+	}
+	public static void main(String[] args)
+	{
+		Assign_03 as= new Assign_03();
+		as.creatList();
+
+	}
+
+}

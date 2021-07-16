@@ -1,0 +1,43 @@
+//14. WAP to empty Map. (Hint - Get keys and iterate through the keys to remove entries from Map)
+package HashMapAssignments;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class Assign_14 
+{
+	Map<Integer, String> map,map1;
+
+	public void creatMAp() 
+	{
+		map = new HashMap<>();
+		map.put(23, "Honda");
+		map.put(62, "Hero");
+		map.put(3, "TVS");
+		map.put(814, "Honda");
+		map.put(null, "BMW");
+		map.put(1, null);
+		System.out.println("HashMap map " + map);
+	}
+	public void creatEmptyMap()
+	{
+		Set<Integer> st= map.keySet();
+		Iterator<Integer>itr=st.iterator();
+		while(itr.hasNext())
+		{
+			map.remove(itr.next());
+		}
+		System.out.println("Map is "+map);
+	}
+	
+	public static void main(String[] args)
+	{
+		Assign_14 as = new Assign_14();
+		as.creatMAp();
+		as.creatEmptyMap();
+
+	}
+
+}

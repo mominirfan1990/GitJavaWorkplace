@@ -1,0 +1,10 @@
+package StringExample;
+
+public class Note_Denomination {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

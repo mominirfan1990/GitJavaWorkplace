@@ -1,0 +1,19 @@
+package com.overloading;
+
+public class BankAppMain
+{
+
+	public static void main(String[] args) 
+	{
+				
+		FDAccount fd  = new FDAccount();
+
+		fd.acid=98765;
+		fd.name = "Irfan";
+		fd.balance = 50000;
+		
+		
+
+	}
+
+}

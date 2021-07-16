@@ -1,0 +1,43 @@
+package StringExample;
+
+import java.util.Scanner;
+
+class Denomination
+{ 
+	int arr[]= {2000, 500, 200, 100, 50, 20, 10, 5, 1};
+	int den[]=new int [arr.length];
+	public void findDenomination(int amt)
+	{
+		for(int i=0; i<arr.length; i++)
+		{	
+			while(amt>=arr[i])
+			{
+				int count=0;
+				if(amt>=arr[i])
+				{
+					amt=amt-arr[i];
+					count++;
+				}
+				den[i]=arr[i];
+			}
+		}
+		for(int x:den)
+		{
+			System.out.println(x);
+		}
+	}
+}
+public class Note_Denomination 
+{
+
+	public static void main(String[] args)
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter Ammount");
+		int x =sc.nextInt();
+		
+		Denomination dm = new Denomination();
+		dm.findDenomination(x);
+	}
+
+}

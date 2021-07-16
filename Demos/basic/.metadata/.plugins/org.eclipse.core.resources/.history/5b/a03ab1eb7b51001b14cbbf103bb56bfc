@@ -1,0 +1,95 @@
+package HashMapAssignments;
+
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Map;
+
+class Student
+{
+	int rollNo;
+	String sname;
+	Student()
+	{}
+	Student(int rn, String sn)
+	{
+		rollNo=rn;
+		sname=sn;
+	}
+	public String toString()
+	{
+		return "Student [rollNo=" + rollNo + ", sname=" + sname + "]";
+	}
+	
+}
+class Deprtment
+{
+	int id;
+	String dname;
+	Student st;
+	Deprtment()
+	{
+		
+	}
+	Deprtment(int id, String dn, Student st)
+	{
+		this.id=id;
+		dname=dn;
+		this.st=st;
+	}
+	public String toString()
+	{
+		return "Deprtment [id=" + id + ", dname=" + dname +"  "+  st + "]";
+	}
+	
+}
+public class Assign_21 
+{
+	Deprtment id;
+	ArrayList<Deprtment> list1,list2,list3,list4;
+	
+	public void creatdepartm()
+	{
+		Student st= new Student(1,"Omkar");
+		new Student(1,"Omkar");
+		new Student(2,"Vishnu");
+		new Student(3,"Sagar");
+		new Student(4,"Nagesh");
+		
+		Deprtment dobj1= new Deprtment(101,"Electric"+list2);
+		Deprtment dobj2= new Deprtment();
+		Deprtment dobj3= new Deprtment();
+		Deprtment dobj4= new Deprtment();
+
+		list2=new ArrayList<>();
+		list2.add(new Deprtment(102,"Science",(new Student(10,"Ramesh"))));
+		list2.add(new Deprtment(102,"Science",(new Student(11,"Balaji"))));
+		list2.add(new Deprtment(102,"Science",(new Student(12,"Dhiraj"))));
+		list2.add(new Deprtment(102,"Science",(new Student(13,"Onkar"))));
+		
+		list3=new ArrayList<>();
+		list3.add(new Deprtment(103,"History",(new Student(20,"Ganesh"))));
+		list3.add(new Deprtment(103,"History",(new Student(21,"Irfan"))));
+		list3.add(new Deprtment(103,"History",(new Student(22,"Snehal"))));
+		list3.add(new Deprtment(103,"History",(new Student(23,"Kiran"))));
+		
+		list4=new ArrayList<>();
+		list4.add(new Deprtment(104,"Geoghraphy",(new Student(30,"Vishal"))));
+		list4.add(new Deprtment(104,"Geoghraphy",(new Student(31,"Deepak"))));
+		list4.add(new Deprtment(104,"Geoghraphy",(new Student(32,"Geeta"))));
+		list4.add(new Deprtment(104,"Geoghraphy",(new Student(33,"Prakash"))));
+		
+	}
+	Map<id, list1> map1;
+	public void creatMap()
+	{
+		map1=new HashMap<>();
+		
+	}
+	
+	public static void main(String[] args) 
+	{
+		Assign_21 as = new Assign_21();
+		as.creatdepartm();	
+	}
+
+}

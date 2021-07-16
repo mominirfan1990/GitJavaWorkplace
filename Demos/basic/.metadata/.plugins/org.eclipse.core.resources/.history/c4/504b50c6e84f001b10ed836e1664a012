@@ -1,0 +1,26 @@
+//17. WAP to create a map which stores an arraylist as a value.
+
+package HashMapAssignments;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Assign_17
+{
+	ArrayList list= new ArrayList();
+	
+	
+	Map <Integer, ArrayList >map;
+	public void creatMap()
+	{
+		map=new HashMap<>();
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

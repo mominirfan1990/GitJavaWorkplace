@@ -1,0 +1,14 @@
+package VectorExp;
+
+import java.util.Vector;
+
+public class VectorDemo {
+
+	public static void main(String[] args) 
+	{
+		Vector vs = new Vector();
+		vs.add(10);
+		vs.add(0, "www");
+	}
+
+}

@@ -1,0 +1,24 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class AdharCheck 
+{
+	Map<String, String> map;
+	
+	public void voteCal()
+	{
+		map= new HashMap<>();
+		map.put("1213", "BJP");
+		map.put("1214", "BJP");
+		map.put("1215", "Cong");
+		map.put("1216", "NCP");
+		map.put("1217", "BJP");
+		
+	}
+	
+	public static void main(String[] args)
+	{
+	
+	}
+
+}

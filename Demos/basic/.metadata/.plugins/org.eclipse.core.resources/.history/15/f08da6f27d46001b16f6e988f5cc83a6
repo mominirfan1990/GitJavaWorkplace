@@ -1,0 +1,23 @@
+package ArrayListExmpl;
+
+public class Student 
+{
+	Student id;
+	Student name;
+	Student marks;
+	
+	Student()
+	{
+		
+	}
+	public void displayMethod()
+	{
+		
+	}
+	
+	public static void main(String[] args)
+	{
+	
+	}
+
+}

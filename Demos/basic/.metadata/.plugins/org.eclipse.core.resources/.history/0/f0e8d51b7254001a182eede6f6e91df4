@@ -1,0 +1,24 @@
+
+public class employeeDayaParameterPassPayroll 
+{
+
+
+public class employeeDataMain
+{
+
+	public static void main(String[] args)
+	{
+		int tax=200, emi=2000;
+		employeeDataParametrPass e1=new employeeDataParametrPass();
+		e1=new employeeDataParametrPass();
+		
+		e1.calculateNetSalary();
+		
+		
+			
+		 
+				
+	}
+}
+
+}

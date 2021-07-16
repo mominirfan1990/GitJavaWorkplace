@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.util.List;
+
+// 
+
+class Student
+{
+	int id;
+	String name;
+	String hobbie;
+	
+	Student(){}
+	Student(int id, String name, String hob)
+	{
+		this.id=id;
+		this.name=name;
+		hobbie=hob;
+	}
+	public String toString()
+	{
+		return "Student id"+id+" Student name "+name+" Hobbie "+hobbie;
+	}
+}
+public class ClassDemo
+{
+	List<Student>list;
+	
+	public void creatList()
+	{
+		list=new ArrayList<>();
+		
+		Student st= new Student(1,"Irfan","reading");
+		Student st1=new Student(2,"Vishal","reading");
+		Student st2= new Student(3,"Sneha","Traveling");
+		
+		list.add(st);
+		list.add(st1);
+		list.add(st2);
+	}
+	public static void main(String[] args) 
+	{
+		
+	}
+
+}

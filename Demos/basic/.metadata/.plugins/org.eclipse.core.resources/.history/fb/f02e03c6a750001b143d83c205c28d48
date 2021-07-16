@@ -1,0 +1,22 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class MovieApp
+{
+	Map<Integer, String> map1;
+	Map<String,Map>map;
+	public void creatMovieList()
+	{
+		map=new HashMap();
+		map.put(1, "URI");
+		map.put(2, "DDLJ ");
+		map.put(3, "TANAJHI");
+		
+				
+	}
+	public static void main(String[] args) 
+	{
+		
+	}
+
+}

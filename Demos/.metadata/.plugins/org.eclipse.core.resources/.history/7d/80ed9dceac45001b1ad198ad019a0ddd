@@ -1,0 +1,47 @@
+class NumeratorGreatherException extends Exception
+{
+	NumeratorGreatherException()
+	{
+		
+	}
+}
+
+class MultiCatchHandler 
+{
+	public void receive(int s, int k) 
+	{
+		try
+		{
+			if(s<k)
+			{
+				throw new NumeratorGreatherException(" Numerator is less than Denominator");
+			}
+		}
+		 catch(NumeratorGreatherException e)
+		{
+			 System.out.println(e.getMessage());
+			
+		}
+		
+
+	}
+}
+
+public class Assign_4
+{
+
+	public static void main(String[] args)
+	{
+		MultiCatchHandler ct = new MultiCatchHandler();
+		int s=4,k=5;
+		try
+		{
+			ct.receive(s,k);
+		}
+		catch( NumeratorGreatherException s)
+		{
+			
+		}
+	}
+
+}

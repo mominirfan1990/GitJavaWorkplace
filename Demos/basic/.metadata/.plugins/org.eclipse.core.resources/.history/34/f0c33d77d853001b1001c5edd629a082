@@ -1,0 +1,37 @@
+import java.util.List;
+
+// 
+
+class Student
+{
+	int id;
+	String name;
+	String hobbie;
+	
+	Student(){}
+	Student(int id, String name, String hob)
+	{
+		this.id=id;
+		this.name=name;
+		hobbie=hob;
+	}
+	public String toString()
+	{
+		return "Student id"+id+" Student name "+name+" Hobbie "+hobbie;
+	}
+}
+public class ClassDemo
+{
+	List<Student>list;
+	
+	public void creatList()
+	{
+		list=new ArrayList<>();
+		
+	}
+	public static void main(String[] args) 
+	{
+		
+	}
+
+}

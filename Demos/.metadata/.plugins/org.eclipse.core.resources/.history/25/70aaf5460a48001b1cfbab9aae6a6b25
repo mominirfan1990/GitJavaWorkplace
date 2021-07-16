@@ -1,0 +1,8 @@
+
+public class ItemStockOverFlowException extends Exception
+{
+	public void ItemStockOverFlowException()
+	{
+		
+	}
+}

@@ -1,0 +1,32 @@
+package ExtraMapAssignments;
+
+class Studnt
+{
+	int id;
+	String name;
+	Studnt()
+	{}
+	Studnt(int id, String nm)
+	{
+		this.id=id;
+		name=nm;
+	}
+	@Override
+	public String toString() 
+	{
+		return "Student id=" + id + ", Student name=" + name;
+	}
+	
+}
+class Course
+{
+	
+}
+public class Assign_01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,31 @@
+//4. WAP to create a LinkedHashMap which contains Integers as key and Strings as value.
+//Print the map contents and observe the order. Use generics.
+package LinkedHashMapAssignment;
+
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Set;
+
+public class Assign_04 {
+
+	public static void main(String[] args)
+	{
+		LinkedHashMap<Integer, String>lmap=new LinkedHashMap<>();
+		lmap.put(10, "Irfan");
+		lmap.put(20, "Ganesh");
+		lmap.put(9, "Omkar");
+		lmap.put(1, "Vishal");
+		lmap.put(40, "Rajesh");
+			
+		Set<String> st= lmap.keySet();
+		Iterator<String>itr=st.iterator();
+		while(itr.hasNext())
+		{
+			String temp=itr.next();
+			System.out.println(temp+" "+lmap.get(temp));
+		}
+
+
+	}
+
+}

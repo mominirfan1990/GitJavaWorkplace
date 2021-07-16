@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;AugestPaper.java&apos; to &apos;OldQuetionPaper/src/AugestPaperQ&apos;&#x0D;&#x0A;- Original project: &apos;JAVAwithJDBC&apos;&#x0D;&#x0A;- Destination element: &apos;OldQuetionPaper/src/AugestPaperQ&apos;&#x0D;&#x0A;- Original element: &apos;AugestPaper.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=OldQuetionPaper/src&lt;AugestPaperQ" element1="/src&lt;{AugestPaper.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" log="=OldQuetionPaper&#x09;=OldQuetionPaper/src&lt;AugestPaperQ" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1614086625724" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,20 @@
+package ExtraMapAssignments;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Assign_02 
+{
+	public static void main(String[] args) 
+	{
+		int i=0;
+		Integer arr[]= {3,4,5,2,3,5,1};
+		Map<Integer,Integer>map=new HashMap<>();
+		for(Integer x:arr)
+		{
+			map.put(i,x);i++;
+		}
+		System.out.println(map);
+	}
+
+}

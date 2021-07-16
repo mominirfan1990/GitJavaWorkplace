@@ -1,0 +1,17 @@
+package com.overloading;
+
+public class ticketBookingApp
+{
+	public static void main(String[] args)
+	{
+		TicketBooking b= new TicketBooking();
+		
+		movie mt= new movie();
+		mt.name= "Tanhaji";
+		mt.time=16;
+		mt.seat="A-12"
+		air at = new air();
+		
+		train tt = new train();
+	}
+}

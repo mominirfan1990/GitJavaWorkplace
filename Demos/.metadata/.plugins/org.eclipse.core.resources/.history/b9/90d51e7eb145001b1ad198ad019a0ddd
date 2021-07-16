@@ -1,0 +1,17 @@
+// WAP to return int value in try block and return int value in finally block and observe which return takes precedence
+
+public class Assign_11
+{
+	public int ReturnData(int i,int j)
+	{
+		int div =i/j;
+		return div;
+		
+	}
+	public static void main(String [] args)
+	{
+		Assign_11 ss = new Assign_11();
+		ss.ReturnData(4, 0);
+	}
+	
+}

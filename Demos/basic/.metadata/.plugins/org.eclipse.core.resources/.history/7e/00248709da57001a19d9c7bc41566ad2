@@ -1,0 +1,41 @@
+package com.overloading;
+
+class movie
+{
+	int seat,time;
+	String name;
+	
+	public void display()
+	{
+		System.out.println(" Welcome to Inox Entertenment Word");
+		System.out.println("Your Movie Name is = " + name);
+		System.out.println("Time of your Movies is " + time);
+		System.out.println("Your Booked Seats are = "+ seat);
+	}
+}
+
+class air
+{
+	int seat, time;
+	String name, from , to;
+	 public void display()
+	 {
+		 System.out.println("Welcome to Indigo Airlines ");
+		 System.out.println("");
+		 System.out.println("");
+	 }
+	
+}
+
+class train
+{
+	
+}
+
+
+
+public class TicketBooking
+{
+  
+		
+}

@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+public class ArrayListAsValue
+{
+	ArrayList<String> execution,account,production;
+	Map<String, ArrayList<String>> map;
+	public void creatList()
+	{
+		execution=new ArrayList<>();
+		execution.add("Irfan");
+		execution.add("vishal");
+		execution.add("omkar");
+		
+		account = new ArrayList<>();
+		account.add("Swati");
+		account.add("sneha");
+		account.add("deepak");
+	}
+	
+	public void creatMap()
+	{
+		
+	}
+
+	public static void main(String[] args)
+	{
+		
+	}
+
+}

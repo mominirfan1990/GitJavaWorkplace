@@ -1,0 +1,27 @@
+class MyClass
+{
+	public void myMethod1()
+	{
+		this.myMethod2();
+		
+	}
+	public void myMethod2()
+	{
+		this.myMethod3();
+		
+	}
+	public void myMethod3()
+	{
+		MyClass mc = new MyClass("d\\My.txt");
+	}
+}
+
+public class Assign_28 {
+
+	public static void main(String[] args)
+	{
+		MyClass ms = new MyClass();
+		ms.myMethod3();
+	}
+
+}

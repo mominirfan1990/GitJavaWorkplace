@@ -1,0 +1,21 @@
+package com.overloading;
+
+public class kid
+{
+
+	public void readBook(int a)
+	{
+		System.out.println();
+	}
+	public void readBook(int a, int b)
+	{
+		System.out.println();
+	}
+	
+	public static void main(String[] args)
+	{
+		kid k =new kid();
+		k.readBook(4);
+		k.readBook(4, 6);
+	}
+}

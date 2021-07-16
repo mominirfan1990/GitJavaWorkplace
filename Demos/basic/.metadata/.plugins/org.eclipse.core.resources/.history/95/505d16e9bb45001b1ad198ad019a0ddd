@@ -1,0 +1,51 @@
+//to check Exception handling with method overriding. Means, 
+//If super class method don’t declare exception then subclass overridden method can declare exception or not
+
+class Parent
+{
+	 void move(int s)
+	{
+		 int k=s/0;
+		System.out.println("in parent");
+	}
+}
+
+class Child extends Parent
+{
+	public void move(int d)
+	{
+		System.out.println("in child");
+		try {
+				int k= d/0;
+			}
+		catch(ArithmeticException e)
+		{
+			
+		}
+		
+	}
+}
+
+public class Assign_16 
+{
+	public static void main(String[] args) 
+	{
+		
+		//Parent pt = new Parent();
+		try 
+		{
+			Child ch= (Child) new Parent();   // ClassCast exception occures at downcasting
+
+		}
+		catch(ClassCastException e)
+		{
+			System.out.println(e.getMessage());	
+		}
+		//Child ch = new Child();
+		//ch.move(4);
+		Parent pt= new Child();
+		pt.move(4);
+		
+	}
+
+}

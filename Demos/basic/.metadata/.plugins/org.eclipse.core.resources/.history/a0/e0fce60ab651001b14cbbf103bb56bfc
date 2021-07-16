@@ -1,0 +1,21 @@
+package ExtraMapAssignments;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Assign_04 {
+
+	public static void main(String[] args) 
+	{
+		String str="Good Morning";
+		char ch[]=new char[str.length()];
+		for(int i=0; i<str.length(); i++)
+		{
+			ch[i]=str.charAt(i);
+		}
+		
+		ArrayList<Character>list=new ArrayList<>(Arrays.asList(ch));
+		System.out.println(list);
+	}
+
+}

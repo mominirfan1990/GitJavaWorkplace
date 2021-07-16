@@ -1,0 +1,111 @@
+package ExtraMapAssignments;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+class Batsman
+{
+	int bid;
+	String bname;
+	String matchid;
+	int runs;
+	
+	Batsman() 
+	{}
+	Batsman(int bid, String bname, String matchid, int runs)
+	{
+		this.bid = bid;
+		this.bname = bname;
+		this.matchid = matchid;
+		this.runs = runs;
+	}
+	@Override
+	public String toString()
+	{
+		return "Batsman bid=" + bid + ", bname=" + bname + ", matchid=" + matchid + ", runs=" + runs;
+	}
+	
+	
+}
+class Player
+{
+	int id;
+	String name;
+	Player(){}
+	Player(int id, String nam)
+	{
+		this.id=id;
+		name=nam;
+	}
+	@Override
+	public String toString()
+	{
+		return id+" "+name+" ";
+	}
+	@Override
+	public int hashCode() 
+	{
+		return name.hashCode()/(2*id);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Player other = (Player) obj;
+		if (id != other.id)
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		return true;
+	}
+	
+}
+public class Assign_05 
+{
+	List<Batsman>list;
+	List<Player>plist;
+	Map<List<Player>,Integer>map;
+	public void creatList()
+	{
+		list=new ArrayList<>();
+		list.add(new Batsman(111,"Virat","match1",100));
+		list.add(new Batsman(112,"Sachin","match1",45));
+		list.add(new Batsman(113,"Vrishabh","match3",10));
+		list.add(new Batsman(112,"Sachin","match2",145));
+		list.add(new Batsman(111,"Virat","match1",40));
+	    list.add(new Batsman(112,"Sachin","match1",45));
+	    plist=new ArrayList<>();
+	    map=new HashMap<>();
+	    int runs=0;
+	    for(int i=0; i<list.size();i++)
+	    {
+	    	for(int j=0; j<list.size();j++)
+	    	{
+	    		if(list.get(i).bid==list.get(j).bid)
+	    		{
+	    			runs=runs+list.get(j).runs;
+	    		}
+	    	}
+	    	
+	    	plist.add(new Player(list.get(i).bid, list.get(i).bname));
+	    	map.put(plist, runs);
+	    	runs=0;
+	    }
+	    System.out.println(map);
+	}
+	public static void main(String[] args)
+	{
+		Assign_05 as = new Assign_05();
+		as.creatList();
+	}
+
+}

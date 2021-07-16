@@ -1,0 +1,20 @@
+class Swaping_Two_Numbers
+
+{
+
+		public static void main(String[] a1)
+		{
+			int A=100, B=50;
+	
+
+			System.out.println("Values before Swaping" = "+" + A + B);
+			
+			int A= A+b;
+			int B= A-b;
+			int A= A-b;
+			System.out.println("Values After Swaping" +"=" + A + B);
+			
+		}
+
+
+}

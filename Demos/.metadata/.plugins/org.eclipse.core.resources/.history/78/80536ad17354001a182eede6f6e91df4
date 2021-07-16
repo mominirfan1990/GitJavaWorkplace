@@ -1,0 +1,19 @@
+
+public class employeeDayaParameterPassPayroll 
+{
+
+	public static void main(String[] args)
+	{
+		int tax=200, emi=2000;
+		employeeDataParametrPass e1=new employeeDataParametrPass();
+		
+		e1.acceptDetails(101, "Irfan", 100000);
+		
+		System.out.println("net salaray"+ e1.calculateNetSalary(tax,emi));
+		
+			
+		 
+				
+	}
+}
+

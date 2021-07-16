@@ -1,0 +1,37 @@
+//15. WAP to create a map using Custom class as key and any other JDK provided object as value
+
+package HashMapAssignments;
+
+import java.util.HashMap;
+import java.util.Map;
+
+class Supply
+{
+	int id;
+	int mark;
+	Supply()
+	{}
+	Supply(int i, int m)
+	{
+		id=i;
+		mark=m;
+	}
+}
+public class Assign_15 
+{
+	Supply s1;
+	
+	Map<Supply,String>map;
+	public void ceartMap()
+	{
+		map=new HashMap<>();
+		map.put(s1, "JAVA");
+		System.out.println(map);
+	}
+	public static void main(String...a)
+	{
+		Assign_15  as= new Assign_15();
+		
+		as.ceartMap();
+	}
+}

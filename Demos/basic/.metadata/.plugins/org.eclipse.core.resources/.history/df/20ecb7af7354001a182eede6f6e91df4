@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class employeeDataParametrPass
+{
+
+	
+		String  name,designation;
+		float hra,da;
+		int net, gross,eid,basic;
+		 
+		
+		public void acceptDetails(int id, String n,int b)
+		{
+				eid=id;
+				name = n;
+				basic = b;
+		}
+		
+		public int calculateNetSalary(int tax,int emi)
+		{
+				gross= (basic+ (basic*0.20) + (basic*0.35));
+				net=(gross-tax-emi);
+				return net;
+			
+		}
+		
+		public void displayDetails()
+		{			
+			System.out.println("name  " +name);
+			System.out.println("Employee Id " + id);
+			System.out.println("Net salary = " + net);
+			
+		}
+
+}
+

@@ -1,0 +1,22 @@
+package ArrayListExmpl;
+
+import java.util.ArrayList;
+public class ArryListExmp  // non generic collection
+{
+
+	public static void main(String[] args) 
+	{
+		ArrayList al = new ArrayList(); // declare Arraylist with initial capacity 10
+		ArrayList s = new ArrayList();
+		s.add(0.04f)
+		al.add(55); // add elemet at end of list
+		al.add("ram");
+		al.add('S');
+		al.addAll(c)
+		
+		System.out.println("Array List "+ al);   // display Arralist
+		System.out.println(al.size());
+		
+	}
+
+}

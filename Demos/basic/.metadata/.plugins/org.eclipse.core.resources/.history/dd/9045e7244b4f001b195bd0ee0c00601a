@@ -1,0 +1,82 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class MapDemo {
+	Map<Integer, String> map, map1;
+
+	public void ceartHasgmap() {
+		map = new HashMap();
+
+		map.put(12, "Irfan");
+		map.put(13, "vishal");
+		map.put(16, "Sneha");
+		// System.out.println(map.put(12, "Vishnu")); // return old value
+
+		System.out.println(map);
+		System.out.println(map.size());
+
+		map1 = new HashMap();
+
+		map1.put(15, "Ganesh");
+		map1.put(18, "Ram");
+	//	map1.put(20, null);
+	//	map1.put(21, null); // many value as null allowed
+	//	map1.put(null, "Omkar");  // one key as null allowed
+	//	map1.put(null,"Jan");  // for second key null replace previous null value
+
+		map.putAll(map1);
+		System.out.println(map);
+
+		System.out.println(map.get(13));
+		System.out.println(map.getOrDefault(19, "Key is not present "));
+
+		System.out.println(map.remove(12));
+		System.out.println(map);
+
+		System.out.println(map.remove(13, "vishal"));
+		System.out.println(map);
+
+		System.out.println(map.replace(16, "Raj")); // return old value
+		System.out.println(map);
+
+		System.out.println(map.replace(18, "Ram", "Gagan")); // return boolean value true or false
+		System.out.println(map);
+		
+		System.out.println(map.containsKey(15));  // check entered key is present or not
+		System.out.println(map.containsValue("India")); // check enetered value present or not
+		
+		System.out.println(map.equals(map1));  // compare two map
+		System.out.println(map.isEmpty()); // check map is empty or not
+		
+		System.out.println(map.keySet());
+		
+		// Iterate map using iterator
+		
+		Set <Integer> s=map.keySet();
+		Iterator <Integer> itr = s.iterator();
+		while(itr.hasNext())
+		{
+			//System.out.println(map.get(itr.next()));
+			Integer o = itr.next();
+			System.out.println(o+ " "+map.get(o) );
+		}
+		 
+		Map<String, Integer> map3= new HashMap<>();
+		map3.put("A", 123);
+		map3.put("B", 126);
+		map3.put("C", 128);
+		map3.put("B", 129);
+		
+		Set<String> st=map3.keySet();
+		
+		
+	}
+
+	public static void main(String[] args) {
+		MapDemo hm = new MapDemo();
+		hm.ceartHasgmap();
+	}
+
+}

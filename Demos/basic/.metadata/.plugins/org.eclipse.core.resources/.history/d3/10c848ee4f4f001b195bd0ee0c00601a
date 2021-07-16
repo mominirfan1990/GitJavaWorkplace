@@ -1,0 +1,39 @@
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class AdharCheck 
+{
+	Map<String, String> map;
+	
+	public void voteCal()
+	{
+		map= new HashMap<>();
+		map.put("1213", "BJP");
+		map.put("1214", "BJP");
+		map.put("1215", "Cong");
+		map.put("1216", "NCP");
+		map.put("1217", "BJP");
+		
+		
+		Set<String> st=map.keySet();
+		Iterator <String> its = st.iterator(); 
+		Collection <String> str = map.values();
+		while(its.hasNext())
+		{
+			System.out.println(Collections.frequency((Collection<?>) map, str));
+			
+		}
+		
+	}
+	
+	public static void main(String[] args)
+	{
+		AdharCheck ad = new AdharCheck();
+		ad.voteCal();
+	}
+
+}

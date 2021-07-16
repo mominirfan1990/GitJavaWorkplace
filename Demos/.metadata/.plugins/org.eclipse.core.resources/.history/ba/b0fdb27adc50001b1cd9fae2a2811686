@@ -1,0 +1,40 @@
+import java.util.HashMap;
+import java.util.Map;
+
+class Book
+{
+	int id;
+	String name;
+	int price;
+	Book()
+	{}
+	Book(int id, String n, int pr)
+	{
+		this.id=id;
+		name=n;
+		price=pr;
+	}
+	public String toString() 
+	{
+		return "Book [id=" + id + ", name=" + name + ", price=" + price + "]";
+	}
+}
+public class AutherApp
+{
+	Map<Book,String>map;
+	public void creatHashMAp()
+	{
+		
+		map=new HashMap<>();
+		map.put(new Book(101,"YAYATI",2000), "VSKhandekar");
+		map.put(new Book(102,"HITLAR",600), "AtulKahate");
+		map.put(new Book(103,"BHAGIRATH",2000), "VBBarve");
+	}
+	
+	public static void main(String[] args) 
+	{
+		AutherApp ap=new AutherApp();
+		
+	}
+
+}

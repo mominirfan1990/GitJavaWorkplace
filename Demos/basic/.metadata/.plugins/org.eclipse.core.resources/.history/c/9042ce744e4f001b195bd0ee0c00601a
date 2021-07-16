@@ -1,0 +1,34 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class AdharCheck 
+{
+	Map<String, String> map;
+	
+	public void voteCal()
+	{
+		map= new HashMap<>();
+		map.put("1213", "BJP");
+		map.put("1214", "BJP");
+		map.put("1215", "Cong");
+		map.put("1216", "NCP");
+		map.put("1217", "BJP");
+		
+		Set<String> st=map.keySet();
+		Iterator <String> its = st.iterator();  
+		while(its.hasNext())
+		{
+			String sd= its.next();
+			System.out.println(sd+" "+map.get(sd));
+		}
+		
+	}
+	
+	public static void main(String[] args)
+	{
+	
+	}
+
+}

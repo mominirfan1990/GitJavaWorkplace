@@ -1,0 +1,41 @@
+//15. WAP to create a map using Custom class as key and any other JDK provided object as value
+
+package HashMapAssignments;
+
+import java.util.HashMap;
+import java.util.Map;
+
+class Supply {
+	int id;
+	String name;
+
+	Supply() {
+	}
+
+	Supply(int id, String nm) {
+		this.id = id;
+		name = nm;
+	}
+
+	public String toString() {
+		return "Supply id " + id + " Supply name " + name;
+	}
+}
+
+public class Assign_15 {
+	Map<Supply, String> map;
+
+	public void creatMap() {
+		Supply s1= new Supply(2321,"BK Publ.");
+		Supply s2=new Supply(453,"MRF");
+		Supply s3=new Supply(786,"ThumpsUp");
+		
+		map=new HashMap<>();
+		map.put(s1,"NoteBook");
+		map.put(s2, "Tyers");
+		map.put(s3, "ColdDrinks")
+	}
+
+	public static void main(String... a) {
+	}
+}

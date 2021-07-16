@@ -1,0 +1,54 @@
+package com.overloading;
+
+class FDAccount
+{
+	int acid;
+	String name;
+	float balance;
+	
+	public void display()
+	{
+		System.out.println("Account Number is = "+ acid);
+		System.out.println("Account Holder name is = "+ name);
+		System.out.println("Account balnce is = "+ balance);
+	}
+}
+
+class LoanAccount
+{
+
+}
+
+class SavingAccount
+{
+	
+}
+
+
+public class BankApp 
+{
+
+	public void openAccount(FDAccount a)
+	{
+		System.out.println("FD Account Details Are = "  );
+		
+	}
+	public void openAccount(LoanAccount a)
+	{
+		System.out.println("Loan Account Details Are = "  );
+	}
+	public void openAccount(SavingAccount a)
+	{
+		System.out.println("Saving Account Details Are = "  );
+	}
+	
+}
+
+
+
+
+
+
+
+
+

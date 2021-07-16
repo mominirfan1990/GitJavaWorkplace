@@ -1,0 +1,54 @@
+package com.overloading;
+
+class FDAccount
+{
+	
+}
+
+class LoanAccount
+{
+
+}
+
+class SavingAccount
+{
+	
+}
+
+
+public class BankApp 
+{
+	public void openAccount(FDAccount a)
+	{
+		System.out.println("FD Account Details Are = "  );
+	}
+	public void openAccount(LoanAccount a)
+	{
+		System.out.println("FD Account Details Are = "  );
+	}
+	public void openAccount(SavingAccount a)
+	{
+		System.out.println("FD Account Details Are = "  );
+	}
+}
+
+
+
+
+
+
+
+
+
+public class CustmerType
+{
+	public static void openAccount(FDAccount a)
+	{
+		
+		
+		BankApp BOI = new BankApp();
+		FDAccount fd= new FDAccount();
+		fd.acid = 
+		
+	}
+}

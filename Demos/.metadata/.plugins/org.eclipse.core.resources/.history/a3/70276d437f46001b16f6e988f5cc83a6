@@ -1,0 +1,40 @@
+package ArrayListExmpl;
+
+import java.util.ArrayList;
+
+public class Student 
+{
+	int eid, marks;
+	String name;
+	ArrayList<Student> st1 = new ArrayList<>();
+	ArrayList<Student> st2 = new ArrayList<>();
+
+	Student()
+	{
+		
+	}
+	Student(Student id, String nam, int mark)
+	{
+		eid=id;
+		name=nam;
+		marks=mark;
+	}
+	
+	public void makeList()
+	{
+		st1.add("Irfam",12,50);
+		
+	}
+	public void displayMethod()
+	{
+			
+	}
+	
+	public static void main(String[] args)
+	{
+		Student sd = new Student();
+		sd.makeList();
+		sd.displayMethod();
+	}
+
+}

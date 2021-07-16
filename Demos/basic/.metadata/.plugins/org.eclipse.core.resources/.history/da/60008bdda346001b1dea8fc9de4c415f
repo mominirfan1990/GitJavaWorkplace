@@ -1,0 +1,17 @@
+package ArrayListExmpl;
+
+import java.util.ArrayList;
+
+public class ContainsMethd {
+
+	public static void main(String[] args)
+	{
+		ArrayList <Integer >al = new ArrayList<>(); // declare ArrayList with initial capacity 10
+		al.add(55); // add elemet at end of list
+		al.add(45);
+		al.add(20);
+		al.add(60); // add collection s
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package LinkedHashMapDemo;
+
+public class LinkedHashMapMethods {
+
+	public static void main(String[] args)
+	{
+
+	}
+
+}

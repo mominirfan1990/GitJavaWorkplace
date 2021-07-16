@@ -1,0 +1,13 @@
+//6. WAP to create a LinkedHashMap. Add 3 objects in it.
+//a. WAP to search a value in the Map.
+//b. WAP to get all keys in the Map.
+//c. WAP to remove an element from the Map.package LinkedHashMapAssignment;
+
+public class Assign_06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

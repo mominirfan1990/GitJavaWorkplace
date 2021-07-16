@@ -1,0 +1,29 @@
+//to check what happen when Exception is thrown by main method
+
+public class Assign_13 
+{
+	public int ReturnData(int i,int j)
+	{
+		int div=0;
+		try
+		{
+			div =i/j;
+			System.out.println("In Try block");
+		}
+		catch(ArithmeticException e)
+		{
+			
+		}
+		return div;
+	}
+	public static void main(String [] args)
+	{
+		Assign_13 ss = new Assign_13();
+		int k=(ss.ReturnData(4, 0));
+		if(k<=0)
+		{
+			throw new OuputNotBeZeroException
+		}
+	}
+
+}

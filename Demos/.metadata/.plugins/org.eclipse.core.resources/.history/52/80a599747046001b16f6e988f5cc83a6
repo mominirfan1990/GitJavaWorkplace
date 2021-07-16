@@ -1,0 +1,18 @@
+package ArrayListExmpl;
+
+import java.util.ArrayList;
+public class ArryListExmp 
+{
+
+	public static void main(String[] args) 
+	{
+		ArrayList al = new ArrayList(); // declare Arraylist with initial capacity 10
+		al.add(55); // add elemet at end of list
+		al.add("ram");
+		al.add(60);
+		al.add(40);
+		System.out.println("Array List "+ al);   // display Arralist
+		
+	}
+
+}

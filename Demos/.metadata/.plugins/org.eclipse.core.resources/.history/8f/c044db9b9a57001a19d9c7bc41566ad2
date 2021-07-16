@@ -1,0 +1,24 @@
+package com.overloading;
+
+public class BankApp 
+{
+	public void openAccount(FDAccount a);
+	public void openAccount(LoanAccount a);
+	public void openAccount(SavingAccount a);
+}
+
+
+
+
+
+
+
+
+
+public class CustmerType
+{
+	public static void mian(String[] args )
+	{
+		
+	}
+}

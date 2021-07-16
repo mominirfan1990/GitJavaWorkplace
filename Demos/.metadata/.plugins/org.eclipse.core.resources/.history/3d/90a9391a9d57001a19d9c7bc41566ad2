@@ -1,0 +1,17 @@
+package com.overloading;
+
+public class BankAppMain
+{
+
+	public static void main(String[] args) 
+	{
+		
+		BankAppMain fd = new BankAppMain();
+		int acid = 876543;
+		String name = "Irfan";
+		Flaot = 500000;
+		
+
+	}
+
+}

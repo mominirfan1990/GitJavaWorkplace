@@ -1,0 +1,11 @@
+//18. WAP to iterate the elements in the arraylist stored in the above Map.
+package HashMapAssignments;
+
+public class Assign_18 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

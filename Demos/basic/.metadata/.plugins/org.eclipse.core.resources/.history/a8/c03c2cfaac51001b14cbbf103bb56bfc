@@ -1,0 +1,46 @@
+package ExtraMapAssignments;
+
+import java.util.ArrayList;
+
+class Student1
+{
+	int sid;
+	String sname,city;
+	float aggregateMarks;
+	Student1(){}
+	Student1(int id, String nam, String city, float mark)
+	{
+		sid=id;
+		sname=nam;
+		this.city=city;
+		aggregateMarks=mark;
+	}
+	@Override
+	public String toString() 
+	{
+		return "Student id=" + sid + ", name=" + sname + ", city=" + city + ", aggregateMarks=" + aggregateMarks;
+	}
+	
+}
+public class Assign_03 
+{
+	ArrayList<Student1>list,list2;
+	public void creatList()
+	{
+		list=new ArrayList<>();
+		list.add(new Student1(11,"Omkar","Pune",60.56f));
+		list.add(new Student1(12,"Vishal","Nashik",60.56f));
+		list.add(new Student1(13,"Ganesh","Mumbai",60.56f));
+		
+		list2=new ArrayList<>();
+		list2.add(new Student1(14,"Irfan","Satara",76.5f));
+		list2.add(new Student1(10,"Mayur","Sangali",76.5f));
+		list2.add(new Student1(4,"Rajasi","Pune",76.5f));
+	}
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

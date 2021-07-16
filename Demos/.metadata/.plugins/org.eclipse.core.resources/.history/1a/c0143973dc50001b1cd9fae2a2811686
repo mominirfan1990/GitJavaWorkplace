@@ -1,0 +1,27 @@
+
+class Book
+{
+	int id;
+	String name;
+	int price;
+	Book()
+	{}
+	Book(int id, String n, int pr)
+	{
+		this.id=id;
+		name=n;
+		price=pr;
+	}
+	public String toString() 
+	{
+		return "Book [id=" + id + ", name=" + name + ", price=" + price + "]";
+	}
+}
+public class AutherApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package VectorExp;
+
+import java.util.Vector;
+
+public class VectorDemo {
+
+	public static void main(String[] args) 
+	{
+		Vector vs = new Vector();
+		vs.add(10);
+		vs.add(0, "www");
+		vs.addElement(60);
+		//vs.clear();
+		vs.elementAt(2);
+		vs.ensureCapacity(20);
+		System.out.println(vs.get(1));
+	
+	}
+
+}

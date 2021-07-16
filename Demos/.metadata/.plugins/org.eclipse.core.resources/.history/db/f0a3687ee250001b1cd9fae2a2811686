@@ -1,0 +1,81 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+class Book
+{
+	int id;
+	String name;
+	int price;
+	Book()
+	{}
+	Book(int id, String n, int pr)
+	{
+		this.id=id;
+		name=n;
+		price=pr;
+	}
+	public String toString() 
+	{
+		return "Book [id=" + id + ", name=" + name + ", price=" + price + "]";
+	}
+	@Override
+	public int hashCode()
+	{
+		return price/(id+name.hashCode());
+	
+	}
+	@Override
+	public boolean equals(Object o)
+	{
+		if(o==null)
+			return false;
+		if(this==o)
+			return true;
+		if(this.getClass()!=o.getClass())
+			return false;
+		Book b= (Book)o;
+		if(this.id==b.id && this.price==b.price && this.name.equals(b.name) )
+			return true;
+		else
+			
+		return false;
+		
+	}
+}
+public class AutherApp
+{
+	Map<Book,String>map;
+	public void creatHashMAp()
+	{
+		
+		map=new HashMap<>();
+		map.put(new Book(101,"YAYATI",2000), "VSKhandekar");
+		map.put(new Book(102,"HITLAR",600), "AtulKahate");
+		map.put(new Book(103,"BHAGIRATH",2000), "VBBarve");
+		//map.put(new Book(101,"YAYATI",2000), "Joshi S");
+	//	System.out.println(map);
+	}
+	public void iterateMAp()
+	{
+		Set<Book> st= map.keySet();
+		Iterator<Book>itr=st.iterator();
+		while(itr.hasNext())
+		{
+			Book bk=itr.next();
+			String kt=map.get(bk);
+			System.out.println();
+			System.out.print("Auther name "+kt+" Book Id "+bk.id+"  Book Name  "+bk.name+"   Book Price"+bk.price+"\n");
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		AutherApp ap=new AutherApp();
+		ap.creatHashMAp();
+		ap.iterateMAp();
+		
+	}
+
+}

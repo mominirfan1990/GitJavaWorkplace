@@ -1,0 +1,25 @@
+
+public class employeeDayaParameterPassPayroll 
+{
+
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please Enter Name  ");
+		String name=sc.nextLine();
+		System.out.println("Please Enter Id  ");
+		int id=sc.nextLine();
+		System.out.println("Please Enter basic  ");
+		int basic=sc.nextLine();
+		
+		int tax=200, emi=2000, base=10000;
+		employeeDataParametrPass e1=new employeeDataParametrPass();
+		
+		e1.acceptDetails(id, name, basic);
+		e1.displayDetails();
+		System.out.println("net salaray"+ e1.calculateNetSalary(tax,emi,base));
+		
+		
+	}
+}
+

@@ -1,0 +1,41 @@
+//WAP to get all the entries from a HashMap. Iterate the entries and print the Key & Value values
+package HashMapAssignments;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class Assign_05 
+{
+	Map<Integer, String> map;
+
+	public void addElement()
+	{
+		map = new HashMap<>();
+		map.put(11, "Honda");
+		map.put(12, "Hero");
+		map.put(13, "TVS");
+		map.put(14, "Honda");
+		System.out.println("Generic HashMap " + map);
+		
+		System.out.println(map.get(12));
+		System.out.println(map.get(14));
+		
+		Set<Integer> o=map.keySet();
+		Iterator itr = o.iterator();
+		while(itr.hasNext())
+		{
+			Integer temp=itr.next();
+			System.out.print(temp+"="+map.get(temp)+" ");
+		}
+	}
+
+	public static void main(String[] args)
+	{
+		Assign_05 as= new Assign_05();
+		as.addElement();
+	}
+
+}

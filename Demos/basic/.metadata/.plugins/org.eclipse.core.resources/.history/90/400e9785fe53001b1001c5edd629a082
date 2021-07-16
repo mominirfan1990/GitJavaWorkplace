@@ -1,0 +1,16 @@
+package HashTableDemo;
+
+import java.util.Hashtable;
+
+public class HashTableExampl {
+
+	public static void main(String[] args) 
+	{
+		Hashtable<Integer, String> h= new Hashtable<>();
+		h.put(10, "JAVA");
+		h.put(13, null);
+	//	h.put(null," ABC ");
+		
+	}
+
+}

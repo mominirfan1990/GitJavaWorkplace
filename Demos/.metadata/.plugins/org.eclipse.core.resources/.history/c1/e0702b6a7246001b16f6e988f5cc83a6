@@ -1,0 +1,33 @@
+// creat Integer type ArrayList and show least object in Array List
+
+package ArrayListExmpl;
+
+import java.awt.List;
+import java.util.ArrayList;
+
+public class IntegerArrayListLeastElemnt
+{
+	public Integer findLeat(ArrayList al)
+	{
+		int min=al.get(0);
+		for(int i=0; i<al.; i++)
+		{
+			
+		}
+		
+		return min;
+		
+	}
+
+	public static void main(String[] args)
+	{
+		ArrayList<Integer> al= new ArrayList<>();
+		al.add(55); // add elemet at end of list
+		al.add(35);
+		al.add(60);
+		al.add(40);
+		System.out.println("Array List "+ al);   // display Arralist
+
+	}
+
+}

@@ -1,0 +1,53 @@
+package ExtraMapAssignments;
+
+import java.util.ArrayList;
+
+class Studnt
+{
+	int id;
+	String name;
+	Studnt()
+	{}
+	Studnt(int id, String nm)
+	{
+		this.id=id;
+		name=nm;
+	}
+	@Override
+	public String toString() 
+	{
+		return "Student id=" + id + ", Student name=" + name;
+	}
+	
+}
+class Course
+{
+	String cname;
+	Course(){}
+	Course(String nam)
+	{
+		cname=nam;
+	}
+}
+public class Assign_01
+{
+	ArrayList<Course>list,list1;
+	public void creatlist()
+	{
+		list=new ArrayList<>();
+		list.add(new Course("JAVA"));
+		list.add(new Course("SQL"));
+		list.add(new Course("Python"));
+		
+		list1=new ArrayList<>();
+		list1.add(new Course("C++ "));
+		list1.add(new Course("DBA"));
+		list1.add(new Course("SCALA "));
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

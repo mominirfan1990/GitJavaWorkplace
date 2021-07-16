@@ -1,0 +1,23 @@
+class MyClass
+{
+	public void myMethod1()
+	{
+		
+	}
+	public void myMethod2()
+	{
+		
+	}
+	public void myMethod3()
+	{
+		
+	}
+}
+
+public class Assign_28 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

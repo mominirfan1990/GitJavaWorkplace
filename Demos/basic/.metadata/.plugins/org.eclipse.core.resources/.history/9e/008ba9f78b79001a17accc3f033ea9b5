@@ -1,0 +1,19 @@
+package StringExample;
+
+import java.util.Scanner;
+
+public class String_input 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Supplier ID ");
+		String str = sc.nextLine(); 
+		System.out.println("Enter Supplier name ");
+		String name = sc.nextLine(); 
+		System.out.println("Enter Supplier mob ");
+		String mob = sc.nextLine(); 
+		System.out.println(" id  "+str+"\n NAme "+name+"\n Mob "+mob);
+	}
+	
+}

@@ -1,0 +1,12 @@
+// creat Integer type ArrayList and show least object in Array List
+
+package ArrayListExmpl;
+
+public class IntegerArrayListLeastElemnt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

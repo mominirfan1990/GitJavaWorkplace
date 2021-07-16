@@ -1,0 +1,41 @@
+package ArrayListExmpl;
+
+import java.util.ArrayList;
+
+public class CityOccurance
+{
+	ArrayList<String> chk = new ArrayList<>();
+	int count=0;
+	int k=0;
+	public void findOccurance(ArrayList s)
+	{
+		for(int i=0; i<s.size(); i++)
+		{
+			count =0;
+			for(int j=0; j<s.size(); j++)
+			{
+				if(s.get(i).equals(s.get(j)))
+				{
+					count++;
+				}								
+			}
+			System.out.println(s.get(i)+ " Occurce "+ count);			
+		}
+		
+	}
+	
+	public static void main(String[] args) 
+	{
+		ArrayList<String> nm = new ArrayList<>();
+		nm.add("pune");
+		nm.add("mumbai");
+		nm.add("pune");
+		nm.add("nashik");
+		
+		CityOccurance co = new CityOccurance();
+		co.findOccurance(nm);
+		
+		
+	}
+
+}

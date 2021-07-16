@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class ArrayListAsValue
+{
+	ArrayList<String> exe,acct,prod;
+	Map<String, ArrayList<String>> map;
+	public void creatList()
+	{
+		exe=new ArrayList<>();
+		exe.add("Irfan");
+		exe.add("vishal");
+		exe.add("omkar");
+		
+		accnt = new ArrayList<>();
+		acct.add("Swati");
+		acct.add("sneha");
+		acct.add("deepak");
+	}
+	
+	public void creatMap()
+	{
+		map=new HashMap<>();
+		map.put("Execution", value)
+	}
+
+	public static void main(String[] args)
+	{
+		
+	}
+
+}

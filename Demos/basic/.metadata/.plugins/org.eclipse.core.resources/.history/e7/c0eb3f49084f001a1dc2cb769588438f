@@ -1,0 +1,95 @@
+/*import java.util.Scanner;
+public class cacluApp 
+{
+
+	public static void main(String[] args)
+	{
+		
+		Scanner sc =new Scanner(System.in);
+		System.out.println("\t\t-----Operation-----");
+		System.out.println("\t\t--1.Square");
+		System.out.println("\t\t--2.log");
+		System.out.println("\t\t--3.Sin");
+		System.out.println("\t\t--4.Cos");
+		System.out.println("\t\t------------------");
+		System.out.println("\t\t-----Enter Your Choice-----");
+		int ch = sc.nextInt();
+		System.out.println("\t\t---Enter Number---");
+		double num=sc.nextDouble();
+		double ans;
+		
+		switch(ch)
+		{
+		default : System.out.println("Invalid choice Please Renter");
+				break;
+		case 1: ans = Math.sqrt(num);
+				System.out.println("Square root of "+num+"is "+ ans);
+				break;
+		
+		case 2: ans = Math.log(num);
+				System.out.println("Log of "+num+"is "+ ans);
+				break;
+		
+		case 3: ans = Math.sin(num);
+				System.out.println("Sin of "+num+"is "+ ans);
+				break;
+		
+		case 4: ans = Math.cos(num);
+				System.out.println("Cos of "+num+"is "+ ans);
+				break;
+		
+		}
+	}
+	
+
+}
+  */
+
+import java.util.Scanner;
+public class cacluApp 
+{
+
+	public static void main(String[] args)
+	{
+		
+		Scanner sc =new Scanner(System.in);
+		System.out.println("\t\t-----Operation-----");
+		System.out.println("\t\t--A.Addition");
+		System.out.println("\t\t--B.Substraction");
+		System.out.println("\t\t--C.Division");
+		System.out.println("\t\t--D.Multiplication");
+		System.out.println("\t\t------------------");
+		System.out.println("\t\t-----Enter Your Choice-----");
+		char ch = sc.next().charAt(0);
+		System.out.println("\t\t---Enter First  Number---");
+		int num1=sc.nextInt();
+		System.out.println("\t\t---Enter Second  Number---");
+		int num2=sc.nextInt();
+		double ans;
+		
+		switch(ch)
+		{
+		default : System.out.println("Invalid choice Please Renter");
+				break;
+		case 'A': ans = num1+num2;
+				System.out.println("Addition of  "+num1+"+ "+num2+"="+ans);
+				break;
+		
+		case 2: ans = num1 - num2;
+				System.out.println("Substraction of  "+num1+"- "+num2+"="+ans);
+				break;
+		
+		case 3: ans = num1 / num2;
+				System.out.println("Division of  "+num1+"/"+num2+"="+ans);
+				break;
+		
+		case 4: ans = num1 * num2;
+				System.out.println("Multiplication of  "+num1+"*"+num2+"="+ans);
+				break;
+		
+		}
+	}
+	
+
+}
+  

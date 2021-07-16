@@ -1,0 +1,22 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class EntrySetDemo 
+{
+	Map<Integer, String> map;
+
+	public void ceartHasgmap() 
+	{
+		map = new HashMap();
+		map.put(12, "Irfan");
+		map.put(13, "vishal");
+		map.put(16, "Sneha");
+	}
+	public static void main(String...a)
+	{
+		EntrySetDemo es = new EntrySetDemo();
+		es.ceartHasgmap();
+				
+	}
+}
+

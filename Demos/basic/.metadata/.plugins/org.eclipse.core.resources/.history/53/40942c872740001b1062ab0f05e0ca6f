@@ -1,0 +1,7 @@
+// remove first occurrence of a word from string
+
+package StringAssignment;
+
+public class RemoveAllOccuranceOfWord {
+
+}

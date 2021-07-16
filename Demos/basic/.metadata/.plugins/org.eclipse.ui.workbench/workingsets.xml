@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1610433141605_3" label="D:\irfanjavaProgram" name="D:\irfanjavaProgram">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ResuartBookig" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/com.overloading" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/IplTeam" type="4"/>
+<item elementID="=ClassTestOnHashMap" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/inheritanceExample1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Association" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/patterns" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ClassTest" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/inheritanceExample" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/accessSpeciafiers" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ClassExamples" type="4"/>
+<item elementID="=EnumConcepts" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/package inht_hirarchical_Example3" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Arrays" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/StatcExample" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/RemoteSystemsTempFiles" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/homeassignment" type="4"/>
+<item elementID="=SuperKeywordExample" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Java Assignment" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/mytest2.p1" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/firstjavaproject" type="4"/>
+<item elementID="=StringExam" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=RevisionAssignment" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/loopassignment" type="4"/>
+<item elementID="=ExcepHandl" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=CollecionExampl" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=MapExamples" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/mytest2.p2" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/InterfaceExamples" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1581568429466_0" label="Window Working Set" name="Aggregate for window 1581568429465"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1585489496533_1" label="Window Working Set" name="Aggregate for window 1585489496533"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1607924222646_2" label="Window Working Set" name="Aggregate for window 1607924222646"/>
+</workingSetManager>

@@ -1,0 +1,15 @@
+//WAP to add elements to a HashMap using generics with Integer as Key and String as value.
+//And 4 key-value Map.Entry
+package HashMapAssignments;
+
+import java.util.HashMap;
+
+public class Assign_03 
+{
+  HashMap<Integer, String> map;
+  public void addElement()
+  {
+	  map = new HashMap<>();
+	  
+  }
+}

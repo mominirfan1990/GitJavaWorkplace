@@ -1,0 +1,13 @@
+//5. WAP to create a LinkedHashMap which contains Strings as key and Integers as value. 
+//Print the map contents and observe the order. Use generics.
+package LinkedHashMapAssignment;
+
+public class Assign_05 {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+	}
+
+}

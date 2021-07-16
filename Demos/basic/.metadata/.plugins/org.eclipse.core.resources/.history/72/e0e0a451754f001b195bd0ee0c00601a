@@ -1,0 +1,29 @@
+package VectorExp;
+
+import java.util.Enumeration;
+import java.util.Vector;
+
+public class VectorDemo {
+
+	public static void main(String[] args) 
+	{
+		Vector vs = new Vector();
+		vs.add(10);
+		vs.add(0, "www");
+		vs.addElement(60);
+		vs.addElement(0.09f);
+		vs.ensureCapacity(20);
+		System.out.println(vs.elementAt(2));
+		System.out.println(vs.get(2));
+		System.out.println(vs);
+		System.out.println(vs);
+		System.out.println(vs.contains(10));
+		Enumeration em = vs.elements();
+		while(em.hasMoreElements())
+		{
+			System.out.print(em.nextElement()+" ");
+		}
+		//vs.clear();
+	}
+
+}

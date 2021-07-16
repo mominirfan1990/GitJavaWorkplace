@@ -1,0 +1,110 @@
+package Assignment_On_Array;
+
+import java.util.Scanner;
+class Department
+{
+  int did;
+  String dname;
+  Department()
+  {}
+  Department(int id, String nam)
+  {
+	  did=id;
+	  dname=nam;
+  }
+  public void displayDept()
+  {
+	  System.out.println("Department name "+dname+"\n Department id "+did);
+  }
+}
+class Date1
+{
+	int day, month, year;
+	Date1()
+	{}
+	Date1(int d, int m, int y)
+	{
+		day=d; month=m; year=y;
+	}
+	public void displayDate()
+	{
+		System.out.println(day+"-"+month+"-"+year);
+	}
+}
+class Employee2
+{
+	String name;
+	int id, salary;
+	Date1 []d;
+	Department dd;
+	Employee2()
+	{}
+	Employee2(String name, int id, int sal, Date1 []d,Department dp)
+	{
+		this.name=name;
+		this.id=id;
+		salary= sal;
+		this.d=d;
+		dd=dp;
+	}
+	public void DispalyEMp()
+	{
+		System.out.println("Employee id "+id+"\n Employee Name "+name+"\n Employee Salary "+salary);
+		for(Date1 x:d)
+		{
+			System.out.println(x);
+		}
+		//System.out.println("Joining Date :"+d+"\n Department "+dd);
+		
+	}
+	
+}
+public class Assign_23_Employee_Department_MyDate 
+{
+
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner (System.in);
+		System.out.println("How many employee details you want to fill ");
+		int l = sc.nextInt();
+		Employee2 ep []= new Employee2[l];
+		Department dd = new Department();
+		for(int i=0; i<ep.length; i++)
+		{
+			ep[i]= new Employee2();
+			System.out.println("Enter Employee Name");
+			String name=sc.next();
+			System.out.println("Enter Employee Id");
+			int id= sc.nextInt();
+			System.out.println("Enter Employee Salary");
+			int sal= sc.nextInt();
+			Date1 d[]=new Date1[1];
+			for(int j=0;j<d.length;j++)
+			{
+				d[j]=new Date1();
+				System.out.println("Enter Day");
+				d[j].day=sc.nextInt();
+				System.out.println("Enter Month");
+				d[j].month=sc.nextInt();
+				System.out.println("Enter Year");
+				d[j].year=sc.nextInt();
+				
+			}
+			
+			ep[i].dd=new Department();
+			System.out.println("Enter Department name");
+			ep[i].dd.dname=sc.next();
+			System.out.println("Eneter Department Id");
+			ep[i].dd.did=sc.nextInt();
+			ep[i]= new Employee2(name,id,sal,d,dd);
+			
+		}
+		
+			e.DispalyEMp();
+		
+	}
+}
+
+
+
+

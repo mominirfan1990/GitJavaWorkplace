@@ -1,0 +1,23 @@
+
+public class Store
+{
+	int maximumlevel=10;
+	int minimumlevel =4;
+	int noOfItemAvailable;
+	public void addItem()
+	{
+		
+	}
+	public void removeItem()
+	{
+		
+	}
+	public void checkStock()
+	{
+		
+	}
+	public static void main(String [] args)
+	{
+		
+	}
+}

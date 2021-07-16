@@ -1,0 +1,29 @@
+package LinkedHashMapDemo;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Set;
+
+public class LinkedHashMapMethods {
+
+	public static void main(String[] args)
+	{
+		LinkedHashMap<Integer, String> lmap=new LinkedHashMap<>();
+		lmap.put(10, "Irfan");
+		lmap.put(20, "Ganesh");
+		lmap.put(9, "Omkar");
+		lmap.put(1, "Vishal");
+		lmap.put(40, "Sneha");
+		
+		List<Integer>list=new ArrayList<>();
+		Set<Integer>st=lmap.keySet();
+		Iterator<Integer>itr=st.iterator();
+		while(itr.hasNext())
+		{
+			Integer temp=itr.next();
+		}
+	}
+
+}
